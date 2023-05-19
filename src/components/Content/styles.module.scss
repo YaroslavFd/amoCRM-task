@@ -1,0 +1,247 @@
+@import '../../vars';
+
+.main {
+  position: relative;
+  flex: 1 1 auto;
+  margin-bottom: 125px;
+
+  @media (max-width: 767px) {
+    margin-top: 95px;
+    margin-bottom: 125px;
+  }
+
+  @media (max-width: 567px) {
+    margin-bottom: 70px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+}
+
+.about {
+  max-width: 365px;
+  p {
+    margin: 0;
+    max-width: 275px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (max-width: 992px) {
+    max-width: 330px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 45px;
+  }
+
+}
+.title {
+  margin: 0;
+  margin-bottom: var(--main-offset);
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 400;
+  color: var(--text-color);
+  span {
+    font-weight: 900;
+    background-color: var(--text-color);
+    background-image: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 40px;
+    line-height: 1.3;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 38px;
+    line-height: 1.25;
+  }
+
+}
+
+.info {
+  max-width: 330px;
+  text-align: right;
+  .title {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    span {
+      text-transform: uppercase;
+      font-weight: 700;
+
+      @media (max-width: 767px) {
+        text-transform: lowercase;
+      }
+    }
+
+  }
+
+  @media (max-width: 767px) {
+    text-align: left;
+  }
+
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  max-height: 170px;
+  gap: var(--main-offset);
+  margin: 0;
+  margin-bottom: var(--big-offset);
+  padding: 0;
+  list-style-type: none;
+  li {
+    max-width: 135px;
+  }
+  h3 {
+    margin: 0;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 0;
+    font-family: 'Montserrat';;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.mobileList {
+  max-width: 290px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  p {
+    position: relative;
+    margin: 0;
+    padding-left: 15px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 10px;
+      height: 1px;
+      background: linear-gradient(120deg, #FCB045 15.14%, #FD1D1D 121.36%), #E4E5EA;
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+
+    li {
+      flex-basis: 50%;
+    }
+  }
+}
+
+.redBall {
+  position: absolute;
+  z-index: -1;
+  top: -135px;
+  left: 350px;
+  border-radius: 100%;
+
+  @media (max-width: 992px) {
+    top: -115px;
+    left: 250px;
+  }
+}
+
+.purpleBall {
+  position: absolute;
+  top: -200px;
+  right: 400px;
+  z-index: -1;
+  
+  border-radius: 100%;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+  filter: blur(5px);
+  backdrop-filter: blur(2px);
+
+  @media (max-width: 992px) {
+    right: 200px;
+  }
+}
+
+.redBallSmall {
+  position: absolute;
+  bottom: 15px;
+  right: 400px;
+  width: 34px;
+  height: 34px;
+  z-index: -1;
+
+  border-radius: 100%;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(2.5px);
+  backdrop-filter: blur(2px);
+}
+
+.purpleBlur {
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  top: -350px;
+  right: 470px;
+  z-index: -1;
+
+  background: #833AB4;
+  opacity: 0.5;
+  filter: blur(196px);
+
+  @media (max-width: 992px) {
+    right: 270px;
+  }
+}
+
+.redBlur {
+  position: absolute;
+  top: 40px;
+  left: -280px;
+  width: 310px;
+  height: 310px;
+  z-index: -1;
+  
+  background: #961A1A;
+  opacity: 0.5;
+  filter: blur(196px);
+}

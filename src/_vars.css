@@ -1,0 +1,18 @@
+:root {
+  --text-color: #E4E5EA;
+  --text-color-hover: #b0b2c1;
+
+  --accent-color: #4077F3;
+  --accent-color-hover: #0e51e7;
+  
+  --background-color: #1E1E1E;
+
+  --sm-offset: 20px;
+  --main-offset: 30px;
+  --md-offset: 40px;
+  --big-offset: 60px;
+
+  @media (max-width: 767px) {
+    --main-offset: 20px;
+  }
+}

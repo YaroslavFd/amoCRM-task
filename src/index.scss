@@ -1,0 +1,27 @@
+@import-normalize;
+@import '_vars.css';
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
