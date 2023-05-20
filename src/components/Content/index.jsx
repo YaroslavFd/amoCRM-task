@@ -55,16 +55,23 @@ export const Content = () => {
           <Button>Получить консультацию</Button>
         </div>
       </div>
-      <img className={styles.redBall} src="/images/redBall.png" alt="decor" />
+      <img
+        className={styles.redBall}
+        src="/images/redBall.png"
+        alt="decor"
+        aria-hidden
+      />
       <img
         className={styles.purpleBall}
         src="/images/purpleBall.png"
         alt="decor"
+        aria-hidden
       />
       <img
         className={styles.redBallSmall}
         src="/images/redBall.png"
         alt="decor"
+        aria-hidden
       />
       <div className={styles.purpleBlur}></div>
       <div className={styles.redBlur}></div>

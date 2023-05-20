@@ -14,5 +14,6 @@
 
   @media (max-width: 767px) {
     --main-offset: 20px;
+    --background-color: #0E1014;
   }
 }

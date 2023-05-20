@@ -182,6 +182,16 @@
     top: -115px;
     left: 250px;
   }
+
+  @media (max-width: 767px) {
+    top: -90px;
+    left: 300px;
+    filter: blur(4.5px);
+  }
+
+  @media (max-width: 567px) {
+    display: none;
+  }
 }
 
 .purpleBall {
@@ -199,6 +209,19 @@
   @media (max-width: 992px) {
     right: 200px;
   }
+
+  @media (max-width: 767px) {
+    top: 185px;
+    right: 0px;
+    filter: blur(8px);
+  }
+
+  @media (max-width: 567px) {
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    filter: blur(10px);
+  }
 }
 
 .redBallSmall {
@@ -214,6 +237,22 @@
   box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
   filter: blur(2.5px);
   backdrop-filter: blur(2px);
+
+  @media (max-width: 767px) {
+    width: 52px;
+    height: 52px;
+    bottom: -75px;
+    left: 30px;
+    filter: blur(4.5px);
+  }
+
+  @media (max-width: 567px) {
+    width: 52px;
+    height: 52px;
+    bottom: -75px;
+    left: 30px;
+    filter: blur(8px);
+  }
 }
 
 .purpleBlur {
@@ -230,6 +269,11 @@
 
   @media (max-width: 992px) {
     right: 270px;
+  }
+
+  @media (max-width: 767px) {
+    top: 85px;
+    right: 0px;
   }
 }
 
