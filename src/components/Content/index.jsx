@@ -57,19 +57,19 @@ export const Content = () => {
       </div>
       <img
         className={styles.redBall}
-        src="/images/redBall.png"
+        src="images/redBall.png"
         alt="decor"
         aria-hidden
       />
       <img
         className={styles.purpleBall}
-        src="/images/purpleBall.png"
+        src="images/purpleBall.png"
         alt="decor"
         aria-hidden
       />
       <img
         className={styles.redBallSmall}
-        src="/images/redBall.png"
+        src="images/redBall.png"
         alt="decor"
         aria-hidden
       />

@@ -5,17 +5,17 @@ export const Socials = () => {
     <ul className={styles.list}>
       <li>
         <a href="/#">
-          <img src="/images/icons/telegram.svg" alt="telegtam" />
+          <img src="images/icons/telegram.svg" alt="telegtam" />
         </a>
       </li>
       <li>
         <a href="/#">
-          <img src="/images/icons/viber.svg" alt="telegtam" />
+          <img src="images/icons/viber.svg" alt="telegtam" />
         </a>
       </li>
       <li>
         <a href="/#">
-          <img src="/images/icons/whatsapp.svg" alt="telegtam" />
+          <img src="images/icons/whatsapp.svg" alt="telegtam" />
         </a>
       </li>
     </ul>

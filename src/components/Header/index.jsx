@@ -8,7 +8,7 @@ export const Header = () => {
         <nav className={styles.nav}>
           <div className={styles.imgBox}>
             <a href="/#">
-              <img src="/images/logo.svg" alt="logo" />
+              <img src="images/logo.svg" alt="logo" />
             </a>
             <p>крупный интегратор CRM в Росcии и ещё 8 странах</p>
           </div>
